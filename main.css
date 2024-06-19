@@ -364,22 +364,28 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    height: 150px;
+    align-items: center;
+    transition: all 500ms ease-in-out;
 }
 
 .allSkills .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-25px); 
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22);
 }
 .progress-text {
+    margin-top:25px;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .progress-bar {
-    height: 20px;
+    margin-top:25px;
+    height: 30px;
     background-color: #f0f0f0;
     border-radius: 10px;
     overflow: hidden;
@@ -748,7 +754,7 @@ section {
 .circle11 {
     width: 650px;
     height: 750px;
-    background-image: radial-gradient(#42C53F, #000AFF);
+    background-image: radial-gradient(#42C53F, #11fc9a);
     position: absolute;
     top: 40%;
     right: -10%;
@@ -1064,7 +1070,6 @@ section {
 }
 
 
-
 #scroll-banner2 {
     overflow: hidden;
     background: #000000;
@@ -1085,7 +1090,7 @@ section {
 }
 
 .scroll-item2 {
-    display: inline-block;
+    display: flex;
     color: #fff;
     border-radius: 10px;
     font-size: 50px;
@@ -1099,27 +1104,28 @@ section {
     background: #a9ff27;
     padding: 15px 0;
     position: absolute;
-    top: 25%;
+    top: 2%;
     right: -20%;
     width: 180%;
-    height: 30px;
+    height: 15px;
     z-index: 0;
 }
 
 .scroll-container3 {
-    /* display: flex; */
-    width: 200%;
-    animation: scroll-horizontal3 10s linear infinite;
+    display: flex;
+    width: 100%;
+    animation: scroll-horizontal3 5s linear infinite;
 }
 
 .scroll-item3 {
     display: inline-block;
     color: #000;
     border-radius: 10px;
-    font-size: 30px;
+    font-size:18px;
     text-align: center;
     min-width: 180px;
-    font-family: r"Fira Mono", monospace;
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
 }
 
 #scroll-banner4 {
