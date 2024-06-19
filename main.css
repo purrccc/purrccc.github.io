@@ -119,6 +119,7 @@ section {
     border-radius: 5px;
     transition: background-color 0.3s;
     border: solid 1px #a9ff27;
+    font-family: "Fira Mono", monospace;
 }
 
 .intro .btn:hover {
