@@ -11,6 +11,7 @@ body {
     padding: 0;
     color: #fff;
     background: #1d1d1d;
+    font-family: "Fira Mono", monospace;
 }
 
 header {
