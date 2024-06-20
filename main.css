@@ -27,6 +27,12 @@ header .container {
     padding-right: 2rem;
 }
 
+header .container img{
+    height: 100px;
+    width: 100px;;
+    margin: 10px;
+}
+
 nav {
     margin: 0;
     /* background: linear-gradient(to right, rgba(7, 0, 15, 0.2), rgba(35, 35, 35, 0.8)); */
@@ -362,13 +368,19 @@ section {
     gap: 20px;
 }
 
+.allSkills .card img{
+    height: 140px;
+    width: 140px;
+    margin-top: 10px;
+}
+
 .allSkills .card {
     background-color: #222222;
     width: 300px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    height: 150px;
+    height: 280px;
     align-items: center;
     transition: all 500ms ease-in-out;
 }
@@ -600,7 +612,7 @@ section {
     background-image: radial-gradient( #42C53F,#42C53F );
     position: absolute;
     top: -20%;
-    left: -15%;
+    left: 15%;
     z-index: 0;
     animation: down 20s infinite;
 }
@@ -774,7 +786,7 @@ section {
 }
 
 .bigger-cont {
-    margin: 0;
+    margin-top: -50px;
     padding: 0;
     min-height: 60vh;
     display: flex;
