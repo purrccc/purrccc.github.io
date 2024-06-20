@@ -85,7 +85,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     background: #131212;
 }
 
@@ -365,6 +365,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* margin-top: -80px; */
     gap: 20px;
 }
 
@@ -443,6 +444,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 .skill {
