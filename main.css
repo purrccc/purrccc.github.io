@@ -219,7 +219,7 @@ section {
 }
 
 .about-container {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     text-align: center;
     z-index: 999;
@@ -255,7 +255,7 @@ section {
 }
 
 .about-text {
-    font-size: 1.2em;
+    font-size: 1.5em;
     display: flex;
     color: #666;
     line-height: 1.6;
@@ -1175,7 +1175,132 @@ section {
     font-size: 20px;
     text-align: center;
     min-width: 180px;
-    font-family: r"Fira Mono", monospace;
+    font-family: "Fira Mono", monospace;
+}
+
+.educ-bg{
+    z-index: 999;
+}
+
+.educ-bg h3{
+    color:#03088b;
+    font-size: 3em;
+    font-family: "Chakra Petch", sans-serif;
+    text-align: left;
+    z-index: 9999;
+}
+
+.educ-content{
+    margin-top: -2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    z-index: 9999;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 
+.notification {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    isolation: isolate;
+    position: relative;
+    width: 25rem;
+    height: 15rem;
+    background: #29292c;
+    border-radius: 1rem;
+    overflow: hidden;
+    font-size: 16px;
+    --gradient: linear-gradient(to bottom, #70fd49, #96ff62 );
+    --color: #32a6ff
+  }
+  
+  .notification:before {
+    position: absolute;
+    content: "";
+    inset: 0.0625rem;
+    border-radius: 0.9375rem;
+    background: #18181b;
+    z-index: 2
+  }
+  
+  .notification:after {
+    position: absolute;
+    content: "";
+    width: 0.25rem;
+    inset: 0.65rem auto 0.65rem 0.5rem;
+    border-radius: 0.125rem;
+    background: var(--gradient);
+    transition: transform 300ms ease;
+    z-index: 4;
+  }
+  
+  .notification:hover:after {
+    transform: translateX(0.15rem)
+  }
+  
+  .notititle {
+    color:  #a9ff27;
+    padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+    font-family: "Chakra Petch", sans-serif;    
+  }
+  
+  .notification:hover .notititle {
+    transform: translateX(0.15rem)
+  }
+  
+  .notibody {
+    color: #fff;
+    padding: 0 1.25rem;
+    transition: transform 300ms ease;
+    z-index: 5;
+    font-size: 1.3rem;
+  }
+  
+  .notification:hover .notibody {
+    transform: translateX(0.25rem)
+  }
+  
+  .notiglow,
+  .notiborderglow {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle closest-side at center, white, transparent);
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  
+  .notiglow {
+    z-index: 3;
+  }
+  
+  .notiborderglow {
+    z-index: 1;
+  }
+  
+  .notification:hover .notiglow {
+    opacity: 0.1
+  }
+  
+  .notification:hover .notiborderglow {
+    opacity: 0.1
+  }
+  
+  .note {
+    color: var(--color);
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 0.9rem;
+    width: 75%;
+  }
